@@ -7,3 +7,4 @@ mul3.s:7: Warning: end of file not at end of a line; newline inserted
 joo@Jo:/mnt/d/ccc/ccc113bSp/_sp/HW4$ ./a.out
 mul3(3,2,5)=30
 ```
+#執行gcc -o3會優化，加上-o3優化
