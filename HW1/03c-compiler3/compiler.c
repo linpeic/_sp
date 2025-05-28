@@ -103,9 +103,10 @@ void WHILE() {
 //do{STMT}
 //while(E);
 void DOWHILE() {
-  int dowhileBegin = nextLabel();
-  int dowhileEnd = nextLabel();
+  int dowhileBegin = nextLabel(); //dowhile開始
+  int dowhileEnd = nextLabel();//dowhile結束
   emit("(L%d)\n", dowhileBegin);
+  //跳過do {} while () ;
   skip("do");
   skip("{");
   STMT();
@@ -113,10 +114,10 @@ void DOWHILE() {
   skip("while");
   skip("(");
   int e = E();
-  emit("if not T%d goto L%d\n", e, dowhileEnd);
+  emit("if not T%d goto L%d\n", e, dowhileEnd); //判斷條件
   skip(")");
   skip(";");
-  emit("goto L%d\n", dowhileBegin);
+  emit("goto L%d\n", dowhileBegin); //判斷條件
   emit("(L%d)\n", dowhileEnd);
 }
 
