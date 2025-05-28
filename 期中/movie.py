@@ -4,7 +4,6 @@ import threading
 # import time
 # from googletrans import Translator #會有因為一直被請求而當掉的問題，所以換一個翻譯套件
 from deep_translator import GoogleTranslator
-from numba.np.arrayobj import np_repeat
 
 # translator = GoogleTranslator()
 # 目標 爬完前15名的電影後，列出詳細資訊
