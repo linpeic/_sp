@@ -6,7 +6,7 @@
 本人原創，使用chatgpt詢問函式用法
 
 執行出來的結果：
-'''
+```
 D:\train_yolo\Anaconda3\python.exe "D:\113-2(三)5-7\test2.py" 
 Top1. 刺激1995
 評分：9.3
@@ -146,4 +146,4 @@ Top15. 星際大戰五部曲：帝國大反擊
 
 Process finished with exit code 0
 
-'''
+```
