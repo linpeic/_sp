@@ -93,7 +93,7 @@ int main() // 主程式
   memset(e, 0, poolsz);
 //power2 f(0)=1 f(n)=f(n-1)*2
 // 3: int f(int n) {
-// 4:   if (n==0) return 1; //f(0)=1
+
   pow= e;
   *e++ = ENT; *e++ = 0;
   *e++ = LLA; *e++ = 2;
@@ -102,6 +102,7 @@ int main() // 主程式
   *e++ = IMM; *e++ = 0;
   *e++ = EQ;
   *e++ = BZ; loc=e; *e++ = 0; 
+// 4:   if (n==0) return 1; //f(0)=1
   *e++ = IMM; *e++ = 1;
   *e++ = LEV;
 // 5:   return f(n-1)*2; //f(n)=f(n-1)*2
@@ -114,10 +115,10 @@ int main() // 主程式
   *e++ = JSR; *e++ = (int) pow;
   *e++ = ADJ; *e++ = 1;
   *e++ = PSH;
-
   *e++ = IMM; *e++ = 2;
   *e++ = MUL;
   *e++ = LEV;
+
 // 9: int main() {
 // 10:   printf("power2(3)=%d\n", power2(3));
   pc = e;
