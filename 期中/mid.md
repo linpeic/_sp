@@ -3,7 +3,7 @@
 ### 爬了https://www.imdb.com/ 中，經網友評分後的經典電影，還有這些電影的介紹及相關資訊
 
 使用pycharm環境
-本人原創，使用chatgpt協助debug
+本人原創，使用chatgpt問如何使用函數的方法
 
 執行出來的結果：
 ```

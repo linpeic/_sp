@@ -108,9 +108,9 @@ void DOWHILE() {
   emit("(L%d)\n", dowhileBegin);
   //跳過do {} while () ;
   skip("do");
-  skip("{");
+  // skip("{");
   STMT();
-  skip("}");
+  // skip("}");
   skip("while");
   skip("(");
   int e = E();
